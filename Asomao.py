@@ -3,6 +3,7 @@
 
 # Asomao: a IRC bot
 # (c) 2018 Leo Hernandez
+# (c) 2018 Linel
 # Under GPLv3 license
 
 import socket
@@ -49,7 +50,7 @@ while 1:
                         name = line[0].split('!')[0].split(':')[1]
                         if name != NICK and name.find(HOST) == -1:
                                 sleep(5)
-                                send_msg("Benvenido al canal oficial en IRC de la comunidad Canaima. Por favor, antes de usar el chat lee nuestras normativas: https://goo.gl/cSYrK8 %s \n" % name)
+                                send_msg(% name "Bienvenido al canal oficial en IRC de la comunidad Canaima. Por favor, antes de usar el chat lee nuestras normativas: https://goo.gl/cSYrK8 %s \n")
 
                 if len(line) > 1:
                         print(line[1])
